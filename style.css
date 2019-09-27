@@ -1,0 +1,63 @@
+* {
+	background-color: #2E9AFE;
+	/*list-style: none;*/
+	/*text-decoration: none;*/
+}
+
+
+.container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	font-size: 2rem;
+}
+
+@media (max-width: 768px){
+	.container {
+		font-size: 1rem;
+		/*list-style: none;*/
+		/*text-decoration: none;*/
+	}
+}
+
+ h1 {
+ 	color: purple;
+ 	text-align: center;
+ 	font-size: 3rem;
+ 	font-family: 'Mansalva', cursive;
+ }
+
+p {
+	color: #FFFFFF;
+	text-align: justify;
+	font-size: 1.3rem;
+	font-family: 'Mansalva', cursive;
+}
+/*
+@media (max-width: 768px){
+	p {
+		font-size: 3rem;
+	}
+}*/
+
+main {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+
+.cidade-1, .cidade-2, .cidade-3, .cidade-4, .cidade-5 {
+	width: 28vw;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 0 15px;
+}
+
+.image {
+	height: 36vh;
+	width: 100%;
+	border-radius: 30px;
+	margin-bottom: 10px;
+}
