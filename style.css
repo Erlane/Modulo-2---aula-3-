@@ -1,31 +1,44 @@
 * {
-	background-color: #2E9AFE;
-	/*list-style: none;*/
-	/*text-decoration: none;*/
+	padding: 0;
+	margin: 0;
+	background: #00BFFF;
+	list-style: none;
+	text-decoration: none;
 }
 
+.menu {
+ 	display: flex;
+ 	justify-content: space-around;
+ 	flex-wrap: wrap;
+}
 
-.container {
+.menu-container {
+	width: 100%;
+    margin-top: 2rem;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: nowrap;
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
-@media (max-width: 768px){
-	.container {
-		font-size: 1rem;
-		/*list-style: none;*/
-		/*text-decoration: none;*/
+@media (max-width: 600px){
+	.menu-container {
+		width: 65%;
+		flex-wrap: wrap;
+		flex-direction: column;
 	}
 }
 
- h1 {
+li {
+	margin: 0 7px 15px;
+}
+
+h1 {
  	color: purple;
  	text-align: center;
  	font-size: 3rem;
  	font-family: 'Mansalva', cursive;
- }
+}
 
 p {
 	color: #FFFFFF;
@@ -33,18 +46,20 @@ p {
 	font-size: 1.3rem;
 	font-family: 'Mansalva', cursive;
 }
-/*
-@media (max-width: 768px){
-	p {
-		font-size: 3rem;
-	}
-}*/
 
 main {
+	margin-top: 50px;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 
+}
+
+@media (max-width: 600px){
+	main {
+		align-items: center;
+		flex-direction: column;
+	}
 }
 
 .cidade-1, .cidade-2, .cidade-3, .cidade-4, .cidade-5 {
@@ -53,6 +68,12 @@ main {
 	align-items: center;
 	flex-direction: column;
 	margin: 0 15px;
+}
+
+@media (max-width: 600px){
+	.cidade-1, .cidade-2, .cidade-3, .cidade-4, .cidade-5 {
+		width: 70vw;
+	}
 }
 
 .image {
